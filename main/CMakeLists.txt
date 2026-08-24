@@ -4,6 +4,7 @@ idf_component_register(
         "data/data_manager.cpp"
         "network/wifi_manager.cpp"
         "network/mqtt_manager.cpp"
+        "tasks/sensor_task.cpp"
         "tasks/mqtt_task.cpp"
     INCLUDE_DIRS "."
     PRIV_REQUIRES
