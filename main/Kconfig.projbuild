@@ -1,0 +1,42 @@
+menu "EdgeLink Wi-Fi"
+
+    config EDGELINK_WIFI_SSID
+        string "Wi-Fi SSID"
+        default ""
+        help
+            Name of the wireless network used by the gateway.
+
+    config EDGELINK_WIFI_PASSWORD
+        string "Wi-Fi password"
+        default ""
+        help
+            Password for the wireless network. Leave empty for an open network.
+
+    config EDGELINK_WIFI_MAX_RETRY
+        int "Maximum connection retries"
+        range 0 100
+        default 5
+
+endmenu
+
+menu "EdgeLink MQTT"
+
+    config EDGELINK_MQTT_BROKER_URI
+        string "Broker URI"
+        default ""
+        help
+            MQTT broker address, for example mqtt://192.168.1.10:1883.
+
+    config EDGELINK_MQTT_TOPIC
+        string "Publish topic"
+        default "edgelink/sensors"
+
+    config EDGELINK_MQTT_USERNAME
+        string "Username"
+        default ""
+
+    config EDGELINK_MQTT_PASSWORD
+        string "Password"
+        default ""
+
+endmenu

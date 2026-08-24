@@ -1,0 +1,10 @@
+# ESP-IDF generated build output
+build/
+
+# Downloaded managed components (restored from the component manifest/lock)
+managed_components/
+
+# Machine-local ESP-IDF configuration and installer metadata
+sdkconfig
+sdkconfig.old
+eim_config.toml
