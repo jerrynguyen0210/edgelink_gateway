@@ -1,6 +1,7 @@
 idf_component_register(
     SRCS
         "main.cpp"
+        "app/gateway_app.cpp"
         "data/data_manager.cpp"
         "network/wifi_manager.cpp"
         "network/mqtt_manager.cpp"
